@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+// 🎨 DESIGN TOKENS GLOBALES (Fase 0)
+:root {
+  // Paleta de Colores Básica (Modo Claro por defecto) [cite: 128, 129]
+  --color-primary: #0f172a;       
+  --color-background: #ffffff;    
+  --color-surface: #f8fafc;       
+
+  // 📝 Tipografía Fluida (Apunte del Profesor - Evita desborde en móvil) [cite: 120, 132]
+  --font-size-base: clamp(1rem, 2.5vw, 1.125rem); 
+  --transition-fast: 150ms ease; 
+}
+
+// 🌙 Soporte Automático para Dark Mode [cite: 112, 123]
+@media (prefers-color-scheme: dark) { 
+  :root {
+    --color-primary: #f8fafc;     
+    --color-background: #0f172a;  // [cite: 124]
+    --color-surface: #1e293b;     
+  }
+}
+
+// Aplicación de los Tokens en el HTML global
+html {
+  font-size: var(--font-size-base); 
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
