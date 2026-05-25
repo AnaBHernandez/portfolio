@@ -1,59 +1,38 @@
-# Portfolio
+# 🚀 Portfolio Profesional - Ecosistema Ana
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
 
-## Development server
+Este es mi proyecto de portfolio profesional desarrollado como Showcase de Empleabilidad. Está diseñado bajo una arquitectura limpia y modular utilizando las tecnologías más modernas del ecosistema frontend.
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## 🛠️ Stack Tecnológico
+- **Framework:** Angular 21 (Arquitectura Standalone y reactividad nativa con Signals)
+- **Gestor de Paquetes:** `pnpm v11` (Optimizado para entornos con restricciones de hardware/8GB RAM)
+- **Estilos:** SCSS con Diseño Adaptativo (Variables globales y tipografía fluida con la función `clamp()`)
+- **Rendimiento:** Server-Side Rendering (SSR) activo para optimización SEO e indexación rápida
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## 📁 Estructura del Proyecto (src/app/)
+- `core/`: Contratos de datos (interfaces), servicios globales de estado y guardianes de ruta.
+- `features/`: Módulos y componentes de página (Home, Proyectos, Skills).
+- `shared/`: Componentes reutilizables de UI (Botones, Tarjetas, Navegación).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## 💻 Desarrollo Local
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+Para clonar y arrancar este proyecto en tu entorno local bajo Ubuntu, ejecuta los siguientes comandos en tu terminal:
 
-## Building
-
-To build the project run:
 
 ```bash
-ng build
-```
+# 1. Instalar las dependencias de forma ultra-ligera sin saturar la RAM
+pnpm install
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+# 2. Levantar el servidor de desarrollo local con SSR activo
+pnpm dev
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Autora:** [AnaBHernandez](https://github.com/AnaBHernandez) | **Última actualización:** Mayo 2026
