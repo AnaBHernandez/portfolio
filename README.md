@@ -1,47 +1,46 @@
-# 🌿 Red3Conecta — Landing Page para el Tercer Sector
+# 🧠 El Palacio de la Memoria — Portfolio Profesional
 
-> Infraestructura digital compartida construida con el tercer sector, para el tercer sector. Un proyecto impulsado por Factoría F5 y Fundació Formació i Treball, con el soporte de UNADA.
+Portfolio profesional interactivo desarrollado con Angular 18 Standalone, estructurado conceptualmente como un palacio mental modular de pensamientos y toma de decisiones lógicas.
 
-[![Astro](https://img.shields.io/badge/Astro-v4-purple)](https://astro.build)
+[![Angular](https://img.shields.io/badge/Angular-18-red)](https://angular.dev)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 ## 🌐 Demo Live
-[Ver Red3Conecta en producción → https://red3conecta.netlify.app]
+[Ver el Palacio de la Memoria en producción → (Próximamente)]
 
 ## ✨ Features / Características
-- **Sistema i18n Bilingüe:** Selector dinámico de idiomas (ES/CA) integrado en la navegación principal.
-- **Accesibilidad Estricta WCAG AA:** Cumplimiento total de estándares de accesibilidad, navegación por teclado y contraste 4.5:1.
-- **CSS Puro Nativo:** Prohibido Tailwind/Bootstrap/Sass. Arquitectura basada en variables `:root` globales y transiciones 0.3s.
-- **Diseño Mobile-First Estricto:** Grid modular en escritorio que se colapsa de forma fluida en una pila vertical en dispositivos ≤375px.
-- **Clean Code & Arquitectura Modular:** Componentes independientes reutilizables con separación estricta de responsabilidades (SRP).
+- **Metáfora Conceptual Única:** Interfaz estructurada como una "Casa de Muñecas" técnica o rejilla modular (inspirada en los principios visuales limpios de Stitch).
+- **Avatar Manejador de Estado (🧠):** Un emoji interactivo que viaja físicamente por las habitaciones y conductos lógicos del sistema.
+- **Estado Global Reactivo:** Implementación nativa de **Angular Signals y Computed** para controlar la posición y el flujo dinámico del avatar.
+- **Diseño Mobile-First Estricto:** Grid modular en escritorio que se colapsa de forma fluida en una pila vertical en dispositivos móviles.
+- **Clean Code & Arquitectura Limpia:** Separación estricta de responsabilidades (SRP) dividida por bloques funcionales independientes.
 
 ## 🛠️ Tech Stack
-- **Framework:** Astro v4 (SPA estático)
+- **Framework:** Angular 18 (Arquitectura Standalone nativa)
 - **Lenguaje:** TypeScript 5.x
-- **Estilos:** CSS Puro estructurado (Variables `:root`, mobile-first)
-- **Internacionalización:** JSON dinámico (ca.json, es.json)
+- **Estilos:** SCSS moderno estructurado (Fondo técnico oscuro #141218)
+- **Gestión de Estado:** Angular Signals
 
 ## 🚀 Desarrollo Local
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/AnaBHernandez/red3conecta-landing.git
+git clone [https://github.com/AnaBHernandez/portfolio.git](https://github.com/AnaBHernandez/portfolio.git)
 
 # Instalar dependencias
 npm install
 
 # Levantar servidor de desarrollo
-npm run dev
+ng serve
 ```
 
-Abre http://localhost:4321 para interactuar con la estructura.
+Abre http://localhost:4200 para interactuar con la estructura.
 
 ## 📁 Estructura Arquitectónica del Sistema
 
-* `src/components/`: Componentes modulares independientes (Navbar, Footer, Hero, About, Sections).
-* `src/i18n/`: Gestión de internacionalización (ca.json, es.json) — Catalán y Español.
-* `src/pages/`: Rutas principales y páginas estáticas (index.astro).
-* `src/styles/`: Sistema de diseño global (global.css, variables `:root`).
+* `src/app/core/`: El Cerebro global (Models y servicios de Signals del Estado).
+* `src/app/features/`: Departamentos modulares independientes (Hero, About, Projects, Contact).
+* `src/app/share/`:Componentes comunes reutilizables y el avatar interactivo.
 
 ## 📄 Licencia
-MIT © Ana Belén Hernández Fernández | Factoría F5 | 2026
+MIT © Ana Belén Hernández Hernández | 2026
