@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f spec.md || (echo 'BLOQUEADO: falta spec.md en la raiz del proyecto. Corre /pensar primero.' && exit 1)"
+          }
+        ]
+      }
+    ]
+  }
+}
