@@ -2,13 +2,14 @@
 # 🏛️ DOCUMENTACIÓN MAESTRA: PALACIO DE LA MEMORIA (SPRINT 1)
 
 ## 🎨 1. Concepto Visual (Technical Dollhouse)
-El sistema visual hereda directamente las reglas del prototipo de Stitch (`code.html`):
-- **Void (Fondo):** `#0f0d13` (General) y `#141218` (Contenedores de habitaciones).
-- **Walls (Bordes):** 1px sólido usando `#494551` (`border-outline-variant`).
-- **Glow (Foco):** Violeta brillante `#cfbcff` (`primary`) con un difuminado de `box-shadow: 0 0 20px rgba(207, 188, 255, 0.15)`.
-- **Tipografía Cruzada:** **Geist** para bloques de lectura e historias; **JetBrains Mono** para trazas de datos y títulos de control.
-- **Física del Avatar:** Icono modular `account_tree` con halo violeta. Sigue al cursor mediante interpolación lineal (*lerping*) a un factor de `0.08` para simular peso visual.
-- **Telemetría:** Panel de control de texto dinámico que lee e imprime la posición exacta en píxeles (`COORD_X.Y`).
+El sistema visual sigue los tokens reales de `DESIGN.md`:
+- **Void (Fondo):** `#0f0e11` (surface-container-lowest) y `#141317` (surface).
+- **Walls (Bordes):** 1px sólido usando `#49454f` (outline-variant).
+- **Glow (Foco):** Violeta brillante `#cfbcff` (primary-container) con `box-shadow: 0 0 15px [accent]40`.
+- **Tipografía Cruzada:** **Geist** para bloques de lectura; **JetBrains Mono** para etiquetas técnicas, siempre UPPERCASE.
+- **Física del Avatar:** Icono `account_tree` con halo violeta. Lerping factor `0.08`.
+- **Telemetría:** Coordenadas dinámicas `COORD_X.Y` impresas en tiempo real.
+- **Formas:** `border-radius: 0` estricto en todo.
 
 ---
 
