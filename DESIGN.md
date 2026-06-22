@@ -101,72 +101,75 @@ spacing:
   container-max: 1440px
 ---
 
-## Brand & Style
-The design system is a rigorous, architectural framework designed for deep focus and structured information retrieval. It adopts a **Technical Brutalist** aesthetic, emphasizing raw structural integrity over decorative softness. The target audience consists of power users, researchers, and technical architects who value precision and spatial organization.
+## Identidad de Marca y Estilo
+Este sistema de diseño es un marco arquitectónico riguroso, desarrollado para un enfoque profundo y la recuperación estructurada de información. Adopta una estética **Brutalista Técnica**, enfatizando la integridad estructural cruda sobre la suavidad decorativa. El público objetivo está compuesto por usuarios avanzados, investigadores y arquitectos técnicos que valoran la precisión y la organización espacial.
 
-The emotional response is one of "ordered complexity"—the UI feels like a high-end terminal or an architectural blueprint. Visual hierarchy is established through line work, strict alignment, and vibrant accent "glows" rather than traditional depth markers. Every element is intentional, sharp, and uncompromisingly digital.
+La respuesta emocional es de "complejidad ordenada": la interfaz de usuario se siente como una terminal de alta gama o un plano arquitectónico. La jerarquía visual se establece a través del trabajo de líneas, la alineación estricta y los "brillos" de acento vibrantes, en lugar de los marcadores de profundidad tradicionales. Cada elemento es intencional, nítido y digital sin concesiones.
 
-## Colors
-The color strategy utilizes a deep, "ink-black" foundation to maximize contrast with technical accents. The base layer is `#0f0d13`, while nested modules use `#141218` to define the "rooms" of the palace.
+## Colores
+La estrategia de color utiliza una base profunda "negro tinta" para maximizar el contraste con los acentos técnicos. La capa base es `#0f0e11`, mientras que los módulos anidados utilizan `#141317` para definir las "habitaciones" del palacio.
 
-Structural integrity is maintained through a consistent `#494551` border color, acting as the skeletal frame. Functional zones are identified by high-chroma accent colors:
-- **Hall:** Neutral structural grey.
-- **Workshop:** Technical Cyan for active creation.
-- **Library:** Emerald Green for grounded knowledge.
-- **History:** Amber for archival warmth.
-- **Mailbox:** Ruby for urgent communication.
-- **Avatar:** Violet for personal identity and user-state indicators.
+La integridad estructural se mantiene a través de un color de borde consistente `#49454f`, que actúa como el marco esquelético del sistema. Las zonas funcionales se identifican mediante colores de acento de alta cromaticidad:
+- **Hall:** Gris estructural neutro.
+- **Workshop:** Cian técnico para la creación activa.
+- **Library:** Verde esmeralda para el conocimiento asentado.
+- **History:** Ámbar para la calidez del archivo histórico.
+- **Mailbox:** Rubí para comunicación urgente.
+- **Avatar:** Violeta para la identidad personal y los indicadores de estado del usuario.
 
-All interactive elements should use these accents as glowing highlights (box-shadows with high spread and low opacity) rather than solid fills where possible.
+Todos los elementos interactivos deben usar estos acentos como destellos luminosos (propiedades `box-shadow` con gran dispersión y baja opacidad) en lugar de rellenos sólidos siempre que sea posible.
 
-## Typography
-The typography system follows a dual-path logic: **Geist** handles the human interface—reading, navigation, and titles—while **JetBrains Mono** handles the machine interface—metadata, technical labels, and system status.
+## Tipografía
+El sistema de tipografía sigue una lógica de doble vía: **Geist** maneja la interfaz humana (lectura, navegación y títulos), mientras que **JetBrains Mono** maneja la interfaz de la máquina (metadatos, etiquetas técnicas y estado del sistema).
 
-Labels should always be set in uppercase when using JetBrains Mono to reinforce the "technical tag" aesthetic. High-level displays use Geist with tight tracking to feel modern and architectural. For mobile devices, `display-lg` scales down to 32px, while all `label` roles remain constant to preserve legibility in dense data views.
+Las etiquetas siempre deben configurarse en mayúsculas (`UPPERCASE`) cuando se use JetBrains Mono para reforzar la estética de "etiqueta técnica". Las pantallas de alto nivel utilizan Geist con un interletraje (*tracking*) ajustado para transmitir una sensación moderna y arquitectónica. Para dispositivos móviles, `display-lg` se reduce a 32px, mientras que todos los roles de tipo `label` permanecen constantes para preservar la legibilidad en vistas de datos densas.
 
-## Layout & Spacing
-The layout is governed by a **strict 4px grid system** and a 12-column fluid grid. Components are "slotted" into the grid like rooms in a floor plan.
+> ⚠️ **Restricción de uso:** JetBrains Mono se utilizará exclusivamente para microetiquetas y valores numéricos cortos. Nunca para texto de lectura continua. Tamaño mínimo: 13px (`label-md`).
 
-- **Desktop:** 12 columns, 16px gutters, 32px outer margins.
-- **Tablet:** 8 columns, 16px gutters, 24px outer margins.
-- **Mobile:** 4 columns, 12px gutters, 16px outer margins.
+## Distribución y Espaciado (Layout & Spacing)
+La distribución está gobernada por un **sistema estricto de rejilla de 4px** y un grid fluido de 12 columnas. Los componentes se "encajan" en la rejilla como habitaciones en un plano de planta.
 
-Spacing between functional groups should be generous (32px+) to prevent the sharp-edged components from feeling cluttered. Borders are the primary separators; use them instead of whitespace to define the "Technical Dollhouse" structure.
+- **Escritorio (Desktop):** 12 columnas, canales (*gutters*) de 16px, márgenes exteriores de 32px.
+- **Tableta (Tablet):** 8 columnas, canales de 16px, márgenes exteriores de 24px.
+- **Móvil (Mobile):** 4 columnas, canales de 12px, márgenes exteriores de 16px.
 
-## Elevation & Depth
-In this design system, there is no Z-axis simulated by light and shadow. Depth is achieved through **Tonal Layering** and **Luminescence**.
+El espaciado entre grupos funcionales debe ser generoso (32px o más) para evitar que los componentes de bordes afilados se sientan abarrotados. Los bordes son los separadores primarios; úsalos en lugar del espacio en blanco para definir la estructura de "El Palacio de la Memoria".
 
-- **Surface 0:** `#0f0d13` (The void/background).
-- **Surface 1:** `#141218` (The active room/container).
-- **Borders:** All containers must have a `1px solid #494551` border.
-- **Interactions:** Instead of shadows, focused or hovered elements emit a color-coded "glow" using a `box-shadow: 0 0 15px [accent_color]40`.
-- **Modals:** Overlays do not use blurs; they use a solid 80% opacity `#0f0d13` backdrop to maintain the high-contrast, brutalist feel.
+## Elevación y Profundidad
+En este sistema de diseño, no existe un eje Z simulado por luces y sombras tradicionales. La profundidad se logra mediante **Capas Tonales** y **Luminiscencia**.
 
-## Shapes
-The shape language is strictly **Rectilinear**. All border-radii are set to `0px`. This reinforces the architectural and technical nature of the system.
+- **Superficie 0:** `#0f0e11` (El vacío / fondo).
+- **Superficie 1:** `#141317` (La habitación activa / contenedor).
+- **Bordes:** Todos los contenedores deben tener un borde de `1px solid #49454f`.
+- **Interacciones:** En lugar de sombras, los elementos enfocados o sobre los que se pasa el cursor (*hover*) emiten un "brillo" codificado por colores mediante `box-shadow: 0 0 15px [color_de_acento]40`.
+- **Modales:** Las superposiciones no utilizan efectos de desenfoque (*blur*); utilizan un fondo de pantalla (*backdrop*) sólido `#0f0e11` al 80% de opacidad para mantener la sensación brutalista de alto contraste.
 
-Buttons, input fields, and large containers must all maintain sharp 90-degree corners. Visual interest is generated through the intersection of lines and the use of "notched" corners (clipped paths) for specific call-to-action elements if additional distinction is required.
+## Formas (Shapes)
+El lenguaje de las formas es estrictamente **Rectilíneo**. Todos los radios de borde (*border-radius*) se establecen en `0px`. Esto refuerza la naturaleza arquitectónica y técnica del sistema.
 
-## Components
-### Buttons
-- **Primary:** Solid `#494551` background, sharp corners, JetBrains Mono label in white. On hover, the border changes to the section's accent color with a subtle glow.
-- **Ghost:** No background, `1px` border. High-contrast label.
+Los botones, los campos de entrada de texto y los contenedores grandes deben mantener esquinas vivas de 90 grados. El interés visual se genera a través de la intersección de líneas y el uso de esquinas con muescas (*notched corners* mediante clip-paths) para elementos de llamada a la acción específicos si se requiere una distinción adicional.
 
-### Chips & Tags
-- Small, sharp-edged boxes using JetBrains Mono.
-- Backgrounds are transparent with a `1px` border matching the section accent (e.g., Cyan for Workshop tags).
+## Componentes
 
-### Input Fields
-- Solid `#0f0d13` background with a `#494551` border.
-- On focus, the border transitions to the primary accent color (`#cfbcff`) and the text cursor mimics a block terminal cursor.
+### Botones
+- **Primario:** Fondo sólido `#49454f`, esquinas vivas, etiqueta en JetBrains Mono de color blanco. Al pasar el cursor (*hover*), el borde cambia al color de acento de la sección con un brillo sutil.
+- **Ghost (Fantasma):** Sin fondo, borde de `1px`. Etiqueta de alto contraste.
 
-### Cards & Containers
-- Containers must clearly define "rooms." Every container has a `1px` border.
-- Headers for cards should be separated by a horizontal stroke, with the title in the top-left and metadata (JetBrains Mono) in the top-right.
+### Chips y Etiquetas (Tags)
+- Cajas pequeñas de bordes afilados que utilizan JetBrains Mono.
+- Los fondos son transparentes con un borde de `1px` que coincide con el acento de la sección (por ejemplo, borde cian para las etiquetas de Workshop).
 
-### Lists
-- Separated by `1px` horizontal lines.
-- Hover states should highlight the entire row with a very subtle shift to `#1a1820` and an accent-colored vertical "indicator" line (2px wide) on the far left.
+### Campos de Entrada (Input Fields)
+- Fondo sólido `#0f0e11` con un borde `#49454f`.
+- Al recibir el foco, el borde cambia al color de acento primario (`#cfbcff`) y el cursor de texto imita el cursor de bloque de una terminal.
 
-### Status Indicators
-- Small squares (not circles) using the color mapping values to indicate system health or category.
+### Tarjetas y Contenedores (Cards & Containers)
+- Los contenedores deben definir claramente las "habitaciones". Cada contenedor tiene un borde de `1px`.
+- Encabezados de tarjetas separados por una línea horizontal, con el título en la parte superior izquierda y los metadatos (JetBrains Mono) en la parte superior derecha.
+
+### Listas
+- Separadas por líneas horizontales de `1px`.
+- Los estados de *hover* deben resaltar la fila completa con un cambio muy sutil a `#1a1820` y una línea vertical de "indicador" de color de acento (de 2px de ancho) en el extremo izquierdo.
+
+### Indicadores de Estado
+- Cuadrados pequeños (no círculos) que utilizan los valores de mapeo de color para indicar la salud del sistema o la categoría.
